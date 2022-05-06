@@ -83,6 +83,8 @@ DEFINE_double(nav_cam_to_sci_cam_offset_override_value,
               "Override the value of nav_cam_to_sci_cam_timestamp_offset from the robot config "
               "file with this value.");
 
+DEFINE_string(extra_timestamps_file, "", "File with extra timestamps.");
+
 int main(int argc, char** argv) {
   ff_common::InitFreeFlyerApplication(&argc, &argv);
   if (FLAGS_ros_bag.empty()) LOG(FATAL) << "The bag file was not specified.";
@@ -198,6 +200,25 @@ int main(int argc, char** argv) {
       int num = ceil((end - beg) / FLAGS_max_time_between_images);
       for (int extra_it = 1; extra_it < num; extra_it++) {
         extra_sci_cam_timestamps.push_back(beg + extra_it * (end - beg) / num);
+      }
+    }
+  }
+
+  // Add images from slow_movement tool
+  if (!FLAGS_extra_timestamps_file.empty()) {
+    // Read file
+    std::ifstream ifs((FLAGS_extra_timestamps_file).c_str());
+    if (!ifs.is_open()) {
+      std::cout << "Could not open file: " << FLAGS_extra_timestamps_file << std::endl;
+      return -1;
+    }
+
+    std::string line;
+    while (getline(ifs, line)) {
+      size_t pos;
+      double timestamp = std::stod(line, &pos);
+      if (pos > 0) {
+        extra_sci_cam_timestamps.push_back(timestamp);
       }
     }
   }
