@@ -183,8 +183,8 @@ else
   touch $XAUTH
   xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
 
-  docker run -d --rm --name isaac \
-          --network docker_isaac \
+  docker run -d --rm --name ${REMOTE}isaac \
+          --network isaac \
           --volume=$XSOCK:$XSOCK:rw \
           --volume=$XAUTH:$XAUTH:rw \
           --volume=`pwd`/simulation.config:/src/astrobee/astrobee/config/simulation/simulation.config:ro \
