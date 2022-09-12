@@ -27,6 +27,7 @@
   <arg name="extra" default=""/>                  <!-- Inject an additional node   -->
   <arg name="debug" default=""/>                  <!-- Debug node group            -->
   <arg name="dds" default="true" />               <!-- Enable DDS                  -->
+  <arg name="ground_truth_localizer" default="false" /> <!-- Use Ground Truth Localizer      -->
   <arg name="sim_mode" default="false" />         <!-- If in sim mode              -->
   <arg name="wifi" default="false" />             <!-- Enable Wifi                 -->
   <arg name="streaming_mapper" default="false" /> <!-- Enable the streaming mapper -->
@@ -135,6 +136,7 @@
         <arg name="extra" value="$(arg extra)" />      <!-- Inject extra nodes   -->
         <arg name="debug" value="$(arg debug)" />      <!-- Debug node group     -->
         <arg name="output" value="$(arg output)" />
+        <arg name="ground_truth_localizer" value="$(arg ground_truth_localizer)" />
       </include>
 
       <!-- If we have specified a bag, then play it back into flight software-->
@@ -174,6 +176,7 @@
         <arg name="extra" value="$(arg extra)" />      <!-- Inject extra nodes   -->
         <arg name="debug" value="$(arg debug)" />      <!-- Debug node group     -->
         <arg name="output" value="$(arg output)" />
+        <arg name="ground_truth_localizer" value="$(arg ground_truth_localizer)" />
       </include>
 
       <!-- If we have specified a bag, then play it back into flight software-->

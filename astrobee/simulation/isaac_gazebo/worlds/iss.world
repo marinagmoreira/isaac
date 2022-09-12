@@ -20,7 +20,7 @@
 
   <world name='default'>
 
-    <physics name='default_physics' default='0' type='ode'>
+    <physics name='default_physics' default='0' type='dart'>
       <max_step_size>0.008</max_step_size>
       <real_time_factor>1</real_time_factor>
       <real_time_update_rate>125</real_time_update_rate>
@@ -57,6 +57,7 @@
 
     <include>
       <uri>model://astrobee_iss</uri>
+      <pose>0 0 0 0 0 0</pose>
     </include>
 
     <include>

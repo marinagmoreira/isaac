@@ -36,6 +36,7 @@
   <arg name="glp" default="local" />             <!-- GLP IP address              -->
   <arg name="rec" default="" />                  <!-- Record local data           -->
   <arg name="dds" default="true" />              <!-- Enable DDS                  -->
+  <arg name="ground_truth_localizer" default="false" />  <!-- Use Ground Truth Localizer      -->
 
   <!-- General options -->
   <arg name="gviz" default="false" />            <!-- Start GNC visualizer        -->
@@ -199,6 +200,7 @@
       <arg name="ilp" value="$(arg ilp)" />          <!-- ILP IP address     -->
       <arg name="glp" value="$(arg glp)" />          <!-- GLP IP address     -->
       <arg name="dds" value="$(arg dds)" />          <!-- Enable DDS         -->
+      <arg name="ground_truth_localizer" value="$(arg ground_truth_localizer)" /> <!-- Use Ground Truth Localizer    -->
       <arg name="sim_mode" value="$(arg sim_mode)" /><!-- Enable sim_mode    -->
       <arg name="wifi" value="$(arg wifi)" />        <!-- Enable wifi        -->
       <arg name="streaming_mapper" value="$(arg streaming_mapper)" /><!-- Enable the isaac streaming mapper -->
@@ -225,6 +227,7 @@
       <arg name="ilp" value="$(arg ilp)" />          <!-- ILP IP address     -->
       <arg name="glp" value="$(arg glp)" />          <!-- GLP IP address     -->
       <arg name="dds" value="$(arg dds)" />          <!-- Enable DDS         -->
+      <arg name="ground_truth_localizer" value="$(arg ground_truth_localizer)" /> <!-- Use Ground Truth Localizer    -->
       <arg name="sim_mode" value="$(arg sim_mode)" /><!-- Enable sim_mode    -->
       <arg name="wifi" value="$(arg wifi)" />        <!-- Enable wifi        -->
       <arg name="streaming_mapper" value="$(arg streaming_mapper)" /><!-- Enable the isaac streaming mapper -->
@@ -254,6 +257,7 @@
       <arg name="ilp" value="$(arg ilp)" />          <!-- ILP IP address     -->
       <arg name="glp" value="$(arg glp)" />          <!-- GLP IP address     -->
       <arg name="dds" value="$(arg dds)" />          <!-- Enable DDS         -->
+      <arg name="ground_truth_localizer" value="$(arg ground_truth_localizer)" /> <!-- Use Ground Truth Localizer    -->
       <arg name="sim_mode" value="$(arg sim_mode)" /><!-- Enable sim_mode    -->
       <arg name="wifi" value="$(arg wifi)" />        <!-- Enable wifi        -->
       <arg name="streaming_mapper" value="$(arg streaming_mapper)" /><!-- Enable the isaac streaming mapper -->
@@ -280,6 +284,7 @@
       <arg name="ilp" value="$(arg ilp)" />          <!-- ILP IP address     -->
       <arg name="glp" value="$(arg glp)" />          <!-- GLP IP address     -->
       <arg name="dds" value="$(arg dds)" />          <!-- Enable DDS         -->
+      <arg name="ground_truth_localizer" value="$(arg ground_truth_localizer)" /> <!-- Use Ground Truth Localizer    -->
       <arg name="sim_mode" value="$(arg sim_mode)" /><!-- Enable sim_mode    -->
       <arg name="wifi" value="$(arg wifi)" />        <!-- Enable wifi        -->
       <arg name="streaming_mapper" value="$(arg streaming_mapper)" /><!-- Enable the isaac streaming mapper -->

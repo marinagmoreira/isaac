@@ -123,7 +123,7 @@
   <xacro:include filename="$(find description)/urdf/model_flashlights.urdf.xacro" />
   <xacro:include filename="$(find description)/urdf/model_speed_cam.urdf.xacro" />
   <xacro:include filename="$(find description)/urdf/model_signal_lights.urdf.xacro" />
-  <xacro:include filename="$(find isaac_astrobee_description)/urdf/model_cargo.urdf.xacro" />
+  <!-- <xacro:include filename="$(find isaac_astrobee_description)/urdf/model_cargo.urdf.xacro" /> -->
 
   <!-- Monitors -->
   <xacro:include filename="$(find description)/urdf/model_monitors.urdf.xacro" />

@@ -42,5 +42,9 @@
     <param name="cargo_description" command='$(find xacro)/xacro --inorder $(find isaac_description)/urdf/cargo_bag.urdf.xacro' />
     <node name="cargo" pkg="astrobee_gazebo" type="spawn_model" args="-param cargo_description -urdf -model $(arg name) -pose $(arg pose) "/>
   </group>
+  <group if="$(eval arg('spawn')=='cargo_double')" ns="object">
+    <param name="cargo_description" command='$(find xacro)/xacro --inorder $(find isaac_description)/urdf/cargo_bag_double.urdf.xacro' />
+    <node name="cargo" pkg="astrobee_gazebo" type="spawn_model" args="-param cargo_description -urdf -model $(arg name) -pose $(arg pose) "/>
+  </group>
 
  </launch>
