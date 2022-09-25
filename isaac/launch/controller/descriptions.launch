@@ -23,7 +23,11 @@
   <param name="/r2_iss/robot_description"
   textfile="$(find astrobee_r2)/urdf/model.urdf" />
   <group ns="cargo">
-  	<param name="/cargo/robot_description"
-    	textfile="$(find isaac_description)/urdf/cargo_bag.urdf.xacro" />
+    <param name="/cargo/robot_description"
+      textfile="$(find isaac_description)/urdf/cargo_bag.urdf.xacro" />
+  </group>
+  <group ns="cargo_double">
+    <param name="/cargo_double/robot_description"
+      textfile="$(find isaac_description)/urdf/cargo_bag_double.urdf.xacro" />
   </group>
 </launch>
