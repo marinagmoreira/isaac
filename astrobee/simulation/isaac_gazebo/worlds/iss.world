@@ -70,6 +70,12 @@
       <pose>11.947 -9.252 5.045 0 0 3.1415</pose>
     </include>
 
+    <include>
+      <uri>model://berth_fixture</uri>
+      <name>berth_fixture</name>
+      <pose>11.5 -9.0 4.5 0 0 0</pose>
+    </include>
+
     <light name='user_point_light_px' type='point'>
       <pose frame=''>30 0 0 0 -0 0</pose>
       <diffuse>0.5 0.5 0.5 1</diffuse>

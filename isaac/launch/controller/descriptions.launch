@@ -26,4 +26,6 @@
   	<param name="/cargo/robot_description"
     	textfile="$(find isaac_description)/urdf/cargo_bag.urdf.xacro" />
   </group>
+  <param name="/berth_fixture/robot_description"
+  textfile="$(find berth_fixture)/urdf/model.urdf" />
 </launch>
