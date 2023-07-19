@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['panorama_20coverage_20planning_97',['Panorama coverage planning',['../pano_coverage.html',1,'inspection']]],
-  ['panoattitude_98',['PanoAttitude',['../classinspection_1_1PanoAttitude.html',1,'inspection']]],
-  ['panoramas_99',['Panoramas',['../panoramas.html',1,'']]],
+  ['panorama_20coverage_20planning_98',['Panorama coverage planning',['../pano_coverage.html',1,'inspection']]],
+  ['panoattitude_99',['PanoAttitude',['../classinspection_1_1PanoAttitude.html',1,'inspection']]],
   ['parsenext_100',['parseNext',['../classhapply_1_1Property.html#a2c4563aebd62d85ecf1eb41608ebecf2',1,'happly::Property::parseNext()'],['../classhapply_1_1TypedProperty.html#add4f214d89d6545d36ac7c86f59a791f',1,'happly::TypedProperty::parseNext()'],['../classhapply_1_1TypedListProperty.html#a82987c6d859c755bbee7a3f750218a3d',1,'happly::TypedListProperty::parseNext()']]],
   ['plydata_101',['PLYData',['../classhapply_1_1PLYData.html',1,'happly::PLYData'],['../classhapply_1_1PLYData.html#a1b6f8c52967e17424e1c4a9fd76be7e0',1,'happly::PLYData::PLYData()'],['../classhapply_1_1PLYData.html#a0126613a424bfef4c09d1c38c47671ac',1,'happly::PLYData::PLYData(const std::string &amp;filename, bool verbose=false)'],['../classhapply_1_1PLYData.html#aeb552f956e3342b9fdc1b3c8bf01a567',1,'happly::PLYData::PLYData(std::istream &amp;inStream, bool verbose=false)']]],
   ['pointcloud_102',['PointCloud',['../classpcl_1_1PointCloud.html',1,'pcl']]],
