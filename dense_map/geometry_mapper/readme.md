@@ -193,6 +193,10 @@ This should end up creating the program:
 
 ### Compiling CGAL
 
+Dependency:
+
+    sudo apt-get install libgmp-dev libmpfr-dev
+
 Compile the CGAL tools using the commands:
 
     mkdir -p $HOME/projects
