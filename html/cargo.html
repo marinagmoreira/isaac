@@ -29,7 +29,7 @@
  <tr style="height: 70px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ISAAC
-   &#160;<span id="projectnumber">0.2.8</span>
+   &#160;<span id="projectnumber">0.2.9</span>
    </div>
    <div id="projectbrief">Flight software for the ISAAC project, adding functionality to the Astrobee robot, operating inside the International Space Station.</div>
   </td>
@@ -91,13 +91,13 @@ $(document).ready(function(){initNavTree('cargo.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>This directory provides the cargo_tool</p>
-<h1><a class="anchor" id="autotoc_md56"></a>
+<h1><a class="anchor" id="autotoc_md60"></a>
 Using the cargo tool</h1>
 <p>This tool is used to initiate pickup and drop cargo actions.</p>
 <p>To run the tool: </p><pre class="fragment">rosrun cargo cargo_tool -$ACTION [OPTIONS]
 </pre><p>The actions that can be defined are: pick - picks up the cargo drop - drops the cargo</p>
 <p>The options that can be defined are: cargo_pose - a pose defined in quaternions of the cargo bag</p>
-<h1><a class="anchor" id="autotoc_md57"></a>
+<h1><a class="anchor" id="autotoc_md61"></a>
 Demo example</h1>
 <p>Launch isaac simulation normally</p>
 <p>Spawn cargo: </p><pre class="fragment">roslaunch isaac_gazebo spawn_object.launch spawn:=cargo pose:="11.3 -5.6 5.6 -0.707 0 0 0.707" name:=CTB_05_1070
